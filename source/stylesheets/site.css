@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+    h1 {
+        @apply text-2xl font-semibold text-gray-700 ;
+    }
+    h2 {
+        @apply text-xl font-semibold;
+    }
+    h3 {
+        @apply text-lg font-semibold text-gray-700;
+    }
+}
+
+
 @layer component {
-     .badge {
+    .badge {
         @apply px-2 mr-1  mb-1 text-base text-gray-700 print:bg-white bg-gray-200;
     }
 }
