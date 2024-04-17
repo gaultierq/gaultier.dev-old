@@ -15,10 +15,13 @@
     }
 }
 
-
 @layer component {
     .badge {
         @apply px-2 mr-1  mb-1 text-base text-gray-700 print:bg-white bg-gray-200;
+    }
+
+    .chevron {
+        @apply absolute -ml-3 sm:-ml-3 select-none transform -translate-y-px ;
     }
 }
 
