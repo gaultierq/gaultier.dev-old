@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    slim (5.2.1)
+      temple (~> 0.10.0)
+      tilt (>= 2.1.0)
+    temple (0.10.3)
+    tilt (2.3.0)
+
+PLATFORMS
+  arm64-darwin-23
+
+DEPENDENCIES
+  slim
+
+BUNDLED WITH
+   2.3.22
