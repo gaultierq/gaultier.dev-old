@@ -16,12 +16,25 @@
 }
 
 @layer component {
+    section {
+
+        @apply text-gray-600 my-8 text-sm;
+        > p {
+            @apply leading-4 text-sm;
+        }
+    }
     .badge {
-        @apply px-2 mr-1  mb-1 text-base text-gray-700 print:bg-white bg-gray-200;
+        @apply px-2 py-1 text-gray-700 bg-gray-200 rounded-xl text-xs ;
     }
 
-    .chevron {
-        @apply absolute -ml-3 sm:-ml-3 select-none transform -translate-y-px ;
+    .badges {
+        @apply inline-block;
+        > span {
+            @apply badge mr-2 ;
+        }
+    }
+
+    .date {
+        @apply font-bold text-xs;
     }
 }
-
