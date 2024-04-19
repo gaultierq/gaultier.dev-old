@@ -2,23 +2,27 @@ doctype html
 html[lang="en"]
   head
     meta[charset="UTF-8"]
-    meta[name="description" content="Front-end and Vue Developer"]
-    meta[name="keywords" content="resume,cv,Marko Marković"]
-    meta[name="author" content="Marko Marković"]
+    meta[name="description" content="Fullstack Engineer"]
+    meta[name="keywords" content="resume,cv,Quentin Gaultier,fullstack"]
+    meta[name="author" content="Quentin Gaultier"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     meta[http-equiv="X-UA-Compatible" content="ie=edge"]
+
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+
     title  Quentin Gaultier — Resume
   body
     main
-      .p-6.mx-auto.max-w-3xl
-        == partial "fragments/header"
-        == partial "fragments/about"
-        .columns-2.gap-4
 
-
-          == partial "fragments/experience"
+      .grid.grid-cols-3.max-w-3xl.m-auto.gap-4.my-8
+        .col-span-1
+          == partial "fragments/header"
+          == partial "fragments/about"
           == partial "fragments/education"
-          == partial "fragments/projects"
-          == partial "fragments/contact"
+
+        .col-span-2
+          == partial "fragments/experience"
+
 
 

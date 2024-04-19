@@ -40,11 +40,20 @@ activate :external_pipeline,
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers {
+  def tag_list(tags)
+    content_tag :div, class: 'badges' do
+      tags.split(',').map(&:strip).map do |tag|
+        content_tag(:span, tag)
+      end.join("\n")
+    end
+
+  end
+}
+
+Slim::Engine.set_options shortcut: {'@' => {tag: 'span', additional_attrs: { class: "tag" }}, '.' => { attr: "class" } }
+
+
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

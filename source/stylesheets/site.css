@@ -13,6 +13,9 @@
     h3 {
         @apply text-lg font-semibold text-gray-700;
     }
+    h4 {
+        @apply font-bold text-xs;
+    }
 }
 
 @layer component {
@@ -24,17 +27,31 @@
         }
     }
     .badge {
-        @apply px-2 py-1 text-gray-700 bg-gray-200 rounded-xl text-xs ;
+        @apply px-2 py-0 text-gray-700 bg-gray-200 rounded-xl text-xs;
+    }
+
+    .tag {
+        @apply px-2 py-[2px] text-gray-700 bg-gray-200 rounded-xl;
+    }
+
+    t{
+        @apply px-1 pb-[2px] text-gray-700 bg-gray-200 rounded;
     }
 
     .badges {
-        @apply inline-block;
+        @apply inline-block text-xs;
         > span {
             @apply badge mr-2 ;
         }
     }
 
-    .date {
+    .subtitle {
         @apply font-bold text-xs;
+    }
+
+    header {
+        > span {
+            @apply font-bold text-xs;
+        }
     }
 }
