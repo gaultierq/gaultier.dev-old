@@ -16,12 +16,13 @@ html[lang="en"]
     main
 
       .grid.grid-cols-3.max-w-3xl.m-auto.gap-4.my-8
-        .col-span-1
+        .col-span-1.bg-gray-100.p-4.rounded
           == partial "fragments/header"
           == partial "fragments/about"
           == partial "fragments/education"
+          == partial "fragments/beyond"
 
-        .col-span-2
+        .col-span-2.p-4.rounded
           == partial "fragments/experience"
 
 

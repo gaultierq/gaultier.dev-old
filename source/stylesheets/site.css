@@ -21,7 +21,7 @@
 @layer component {
     section {
 
-        @apply text-gray-600 my-8 text-sm;
+        @apply text-gray-600 my-4 text-sm;
         > p {
             @apply leading-4 text-sm;
         }
