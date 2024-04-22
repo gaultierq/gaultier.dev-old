@@ -9,9 +9,10 @@ module.exports = {
         background: "#FEFEFE"
       },
       fontSize: {
-        xs: '0.5rem',
+        xs: '0.6rem',
         sm: '0.7rem',
         base: '0.85rem',
+        lg: '0.9rem',
         xl: '1rem',
         '2xl': '1.4rem',
         '3xl': '1.7rem',

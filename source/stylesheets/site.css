@@ -21,7 +21,7 @@
 @layer component {
     section {
 
-        @apply text-gray-600 my-4 text-sm;
+        @apply text-gray-600 text-sm;
         > p {
             @apply leading-4 text-sm;
         }
@@ -58,4 +58,13 @@
             @apply font-bold text-xs;
         }
     }
+    .card {
+        @apply relative rounded-xl;
+        &:before {
+            content: "\a0";
+            height: calc(100%);
+            @apply absolute bg-gray-200 w-[1px] -left-4;
+        }
+    }
+
 }
