@@ -14,7 +14,7 @@
         @apply text-lg font-semibold text-gray-700;
     }
     h4 {
-        @apply font-bold text-xs;
+        @apply font-bold text-sm;
     }
 }
 
