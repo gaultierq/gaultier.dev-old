@@ -1,70 +1,96 @@
 div.p-4.rounded
+  h2 Professionnal experience
+  section.mb-4
+    p Freelancer since 2016, below is a list of some of the projects I have been working on
+
   section
-    h3 Backend Developer
+    h3.mb-4 Backend Developer
 
-    div.rounded.card
-      p Designed, developed and delivered the following projects solo:
+    div.rounded.card.relative
+      .absolute.bg-gray-100.opacity-30.-left-4.-top-3.rounded-l-xl.border-gray-200.border.border-r-0.z-0 style="height: calc(100% + 1rem); width: calc(100% + 3rem);"
+      div.z-10.relative
+        p
+          i Designed, developed and delivered the following projects as a solo developer
 
-      .py-2
-        a href="https://staging.myiledere.rentals" target="_blank"
-          h4  My Ile-de-ré rentals (2023)
-        p Developed a home booking system using <t>rails</t>, the <t>hotwire</t> suite and <t>tailwind</t>. Deployed on <t>render</t> w/ <t>circleci</t>
+        .py-2
+          a href="https://staging.myiledere.rentals" target="_blank"
+            h4
+              | My Ile-de-ré rentals
+              d 2023
+          p Developed a home booking system using <t>rails</t>, the <t>hotwire</t> suite and <t>tailwind</t>. Deployed on <t>render</t> w/ <t>circleci</t>
 
-      .py-2
+        .py-2
 
-        a href="https://www.youtube.com/watch?v=PkkYJG7rgHE" target="_blank"
-          h4 Hotel Mobility (2020)
-        p Built a solution for a electric scooter rental system comprised of a <t>rails</t> API + <t>node</t> server embed on rPi. Deployed on <t>gcp</t> using <t>docker</t> & <t>ansible</t>
+          a href="https://www.youtube.com/watch?v=PkkYJG7rgHE" target="_blank"
+            h4
+              | Hotel Mobility
+              d 2020
+          p Built a solution for a electric scooter rental system comprised of a <t>rails</t> API + <t>node</t> server embed on rPi. Deployed on <t>gcp</t> using <t>docker</t> & <t>ansible</t>. Payment with <t>stripe</t>. Apps in <t>react-native</t>
 
-      .py-2
-        h4 Clicknfid (2020)
-        p Built a chat bot with <t>react</t> <t>graphql</t> <t>prisma</t>
+        .py-2
+          h4 Clicknfid <d>2020</d>
+          p Built a chat bot with <t>react</t> <t>graphql</t> <t>prisma</t>
 
     div.card.mt-2
       .py-2
-        h4 Pearltrees (2013 - 2016)
+        a href="https://www.pearltrees.com/" target="_blank"
+          h4
+            | Pearltrees
+            d 2013 - 2016
         span <i> junior developer (Paris)</i>
         p Maintained a custom multi-threaded background jobs queuing system built in <t>java</t>. Contributed to a high volume web-scraping system. Contributed to iOs, Android and web apps
 
+  section.mt-4.relative
 
-
-  section.mt-4
-    h3 Mobile Development
-
-    .py-2
+    .relative.z-10
+      h3 Mobile Development
       .rounded.card
         .py-2
           a href="https://www.happypal.fr/" target="_blank"
-            h4 Happypal (2024)
+            h4
+              | Happypal
+              d 2024
 
           p Deployed a fully automated deployment pipelines for their <t>capacitor</t> apps, using <t>fastlane</t> and <t>GitHub Actions</t>
 
         .py-2
           a href="https://www.instamed.fr/" target="_blank"
-            h4 Instamed (2020-2023)
-          p Built full-featured <t>react-native</t> apps from 0 to the stores.
+            h4
+              | Instamed
+              d 2020-2023
           p
-            i also for Hotel mobility (2020) & Goodshopping (2017-2019)
+            | Built full-featured <t>react-native</t> apps from 0 to the stores - offline support - OTA updates with <t>codepush</t>- test coverage with <t>Detox</t> - normalized data store with <t>json-api</t>
+
+          p
+            i similar projects: Hotel mobility <d>2020</d> & Goodshopping <d>2017-2019</d>
 
 
       .rounded.card.mt-2
         .py-2
-          h4 SUSH (2023)
-          p Optimized rendering performances tracking useless re-renders and mis-configured <t>zutand</t> selectors. Investigated and fixed a bug in ios and android widgets leading to $7k S3 bill overdue
+          h4
+            | SUSH
+            d 2023
+          p Optimized rendering performances tracking useless re-renders and mis-configured <t>zutand</t> selectors. Investigated and fixed a bug in ios and android widgets leading to a monthly $7k S3 bill overdue
 
         .py-2
           a href="https://play.google.com/store/apps/details?id=com.babysittor&hl=fr" target="_blank"
-            h4 Babysittor (2016)
+            h4
+              | Babysittor
+              d 2016
 
-          p Built & published a <span class="text-gray-800 text-xs">4,6★</span> <t>android</t> app solo
+          p Built & published a <span class="text-gray-800 text-xs">4,6★</span> <t>android</t> app
 
   section.mt-4.card
     h3 React Consultant
 
     .py-2
-      h4 JUMP (2021)
+      h4
+        | JUMP
+        d 2021
       p Helped the team mitigating their app latency app by untangling their components. Initiated migration to <t>typescript</t> and <t>redux-tool-kit</t>. Delivered team training sessions.
 
     .py-2
-      h4 Weenat (2020)
+      h4
+        | Weenat
+        d 2020
       p Conducted performance audits, providing optimization recommendations. Reduced render count by 80% on home page.
