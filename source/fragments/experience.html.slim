@@ -1,28 +1,27 @@
 div.p-4.rounded
   h2 Professionnal experience
   section.mb-4
-    p Freelancer since 2016, below is a list of some of the projects I have been working on
+    p Freelancer since 2016, below is a list of some of the projects I have worked on
 
   section
-    h3.mb-4 Backend Developer
+    h3.mb-4 Fullstack Developer
 
     div.rounded.card.relative
-      .absolute.bg-gray-100.opacity-30.-left-4.-top-3.rounded-l-xl.border-gray-200.border.border-r-0.z-0 style="height: calc(100% + 1rem); width: calc(100% + 3rem);"
+      .absolute.bg-gray-100.opacity-30.-left-3.-top-3.rounded-l.border-gray-200.border.border-r-0.z-0 style="height: calc(100% + 1rem); width: calc(100% + 3rem);"
       div.z-10.relative
         p
-          i Designed, developed and delivered the following projects as a solo developer
+          i Designed, developed and delivered the following projects as a <strong>solo developer</strong>
 
         .py-2
-          a href="https://staging.myiledere.rentals" target="_blank"
-            h4
+          h4
+            = cute_link_to "https://staging.myiledere.rentals" do
               | My Ile-de-ré rentals
               d 2023
           p Developed a home booking system using <t>rails</t>, the <t>hotwire</t> suite and <t>tailwind</t>. Deployed on <t>render</t> w/ <t>circleci</t>
 
         .py-2
-
-          a href="https://www.youtube.com/watch?v=PkkYJG7rgHE" target="_blank"
-            h4
+          h4
+            = cute_link_to "https://www.youtube.com/watch?v=PkkYJG7rgHE" do
               | Hotel Mobility
               d 2020
           p Built a solution for a electric scooter rental system comprised of a <t>rails</t> API + <t>node</t> server embed on rPi. Deployed on <t>gcp</t> using <t>docker</t> & <t>ansible</t>. Payment with <t>stripe</t>. Apps in <t>react-native</t>
@@ -33,12 +32,13 @@ div.p-4.rounded
 
     div.card.mt-2
       .py-2
-        a href="https://www.pearltrees.com/" target="_blank"
+        div.lefty
           h4
-            | Pearltrees
-            d 2013 - 2016
-        span <i> junior developer (Paris)</i>
-        p Maintained a custom multi-threaded background jobs queuing system built in <t>java</t>. Contributed to a high volume web-scraping system. Contributed to iOs, Android and web apps
+            = cute_link_to "https://www.pearltrees.com/" do
+              | Pearltrees
+              d 2013 - 2016
+          span <i>as a junior developer (Paris)</i>
+          p Maintained a custom multi-threaded background jobs queuing system built in <t>java</t>. Contributed to a high volume web-scraping system. Contributed to iOs, Android and web apps
 
   section.mt-4.relative
 
@@ -46,16 +46,16 @@ div.p-4.rounded
       h3 Mobile Development
       .rounded.card
         .py-2
-          a href="https://www.happypal.fr/" target="_blank"
-            h4
+          h4
+            = cute_link_to "https://www.happypal.fr/" do
               | Happypal
               d 2024
 
           p Deployed a fully automated deployment pipelines for their <t>capacitor</t> apps, using <t>fastlane</t> and <t>GitHub Actions</t>
 
         .py-2
-          a href="https://www.instamed.fr/" target="_blank"
-            h4
+          h4
+            = cute_link_to "https://www.instamed.fr/" do
               | Instamed
               d 2020-2023
           p
@@ -68,13 +68,14 @@ div.p-4.rounded
       .rounded.card.mt-2
         .py-2
           h4
-            | SUSH
-            d 2023
+            = cute_link_to "https://sush.app/" do
+              | SUSH
+              d 2023
           p Optimized rendering performances tracking useless re-renders and mis-configured <t>zutand</t> selectors. Investigated and fixed a bug in ios and android widgets leading to a monthly $7k S3 bill overdue
 
         .py-2
-          a href="https://play.google.com/store/apps/details?id=com.babysittor&hl=fr" target="_blank"
-            h4
+          h4
+            = cute_link_to "https://play.google.com/store/apps/details?id=com.babysittor&hl=fr" do
               | Babysittor
               d 2016
 
@@ -85,12 +86,14 @@ div.p-4.rounded
 
     .py-2
       h4
-        | JUMP
-        d 2021
+        = cute_link_to 'https://jump-technology.com/en' do
+          | JUMP
+          d 2021 - 2023
       p Helped the team mitigating their app latency app by untangling their components. Initiated migration to <t>typescript</t> and <t>redux-tool-kit</t>. Delivered team training sessions.
 
     .py-2
       h4
-        | Weenat
-        d 2020
+        = cute_link_to 'https://weenat.com/en/' do
+          | Weenat
+          d 2020
       p Conducted performance audits, providing optimization recommendations. Reduced render count by 80% on home page.

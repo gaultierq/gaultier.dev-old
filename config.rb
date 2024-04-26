@@ -47,8 +47,18 @@ helpers {
         content_tag(:span, tag)
       end.join("\n")
     end
-
   end
+
+  def cute_link_to(link)
+    content_tag :a, class: 'relative group', href: link, target: 'blank' do
+      a = "<span class='bg-accent opacity-20 rounded absolute z-0 scale-x-[0] group-hover:scale-x-[1] transition-transform ease-global motion-safe:duration-300 motion-reduce:duration-0 origin-left' style='top: -0.1rem; left: -0.3rem; width: calc(100% + 0.6rem); height: calc(100% + 0.2rem);' ></span>"
+      b = content_tag(:span, class: 'relative z-10') do
+        yield
+      end
+      a + b
+    end
+  end
+
 }
 
 Slim::Engine.set_options shortcut: {'@' => {tag: 'span', additional_attrs: { class: "tag" }}, '.' => { attr: "class" } }

@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./source/**/*.{html,erb,slim}"
+    "./source/**/*.{html,erb,slim}",
+    "./config.rb"
   ],
 
   theme: {
@@ -12,7 +13,12 @@ module.exports = {
         screen: { raw: 'screen' },
       },
       colors: {
-        background: "#FEFEFE"
+
+        primary: "#27374D",
+        secondary:"#526D82",
+        accent: "#9DB2BF",
+        background: "#FEFEFE",
+        background2: "#DDE6ED",
       },
       fontSize: {
         xs: '0.6rem',
